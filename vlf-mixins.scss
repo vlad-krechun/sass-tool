@@ -1,0 +1,15 @@
+@mixin mixFluid($prop, $f-min, $f-max, $v-min, $v-max) {
+  // #{$property}: $ltr-value;
+  #{$prop}: calcFluidFontSize($f-min, $f-max, $v-min, $v-max);
+  // [dir=rtl] & {
+  //   #{$property}: $rtl-value;
+  // }
+@media (max-width: #{$v-min - 0.2}px ) {
+  #{$prop}: $f-min +px;
+}
+@media (min-width: #{$v-max}px ) {
+  #{$prop}: $f-max +px;
+}
+
+}
+
