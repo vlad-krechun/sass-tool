@@ -9,3 +9,14 @@
   @function rem($px){
     @return calc($px / 16) * 1rem;
   };
+
+
+  @function lighter($color, $tone) {
+    $adjust: 16*$tone;
+    @return adjust-color($color, $red: $adjust, $green: $adjust, $blue: $adjust);
+  }
+
+  @function darker($color, $tone) {
+    $adjust: -16*$tone;
+    @return adjust-color($color, $red: $adjust, $green: $adjust, $blue: $adjust);
+  }
