@@ -114,6 +114,13 @@
 		],
 		"description": "Media max width 1400 - 0.2"
 	  },
+	  "Mixin size fluid": {
+		"prefix": "mix-fluid",
+		"body": [
+		  "@include mixFluid(${1:property}, ${2:min-size}, ${3:max-size}, ${4:320}, ${5:1400});"
+		],
+		"description": "Mixin size fluid"
+	  }
 
 
 	 
