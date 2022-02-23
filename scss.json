@@ -120,6 +120,20 @@
 		  "@include mixFluid(${1:property}, ${2:min-size}, ${3:max-size}, ${4:320}, ${5:1400});"
 		],
 		"description": "Mixin size fluid"
+	  },
+	  "Function lighter color": {
+		"prefix": "f-lig",
+		"body": [
+		  " lighter(${1:color}, ${2:tone});"
+		],
+		"description": "Function lighter color"
+	  },
+	  "Function darker color": {
+		"prefix": "f-dar",
+		"body": [
+		  " darker(${1:color}, ${2:tone});"
+		],
+		"description": "Function darker color"
 	  }
 
 
